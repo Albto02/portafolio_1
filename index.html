@@ -2,60 +2,145 @@
 <html>
 <head>
   <title>Mi Portafolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos CSS para personalizar la apariencia */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    section {
+      padding: 50px;
+    }
+    
+    #sobre-mi {
+      background-color: #F49AC2;
+    }
+    
+    #experiencia {
+      background-color: #FFD1DC;
+    }
+    
+    #proyectos {
+      background-color: #AEC6CF;
+    }
+    
+    #contacto {
+      background-color: #B39EB5;
+    }
+    
+    h2 {
+      margin-top: 0;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #f2f2f2;
+    }
+    
+    li {
+      margin: 10px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .about-me-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .about-me-image {
+      width: 300px;
+      height: auto;
+      margin-right: 50px;
+    }
+    
+    .project-image {
+      width: 300px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Mi Portafolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <h1>Mi Nombre</h1>
   </header>
-
-  <section id="inicio">
-    <h2>Bienvenido a mi portafolio</h2>
-    <p>¡Hola! Soy [Tu nombre] y soy un [desarrollador web, diseñador gráfico, etc.] apasionado. Aquí puedes ver algunos de mis trabajos y conocer más sobre mí.</p>
-  </section>
-
-  <section id="proyectos">
-    <h2>Mis proyectos</h2>
-    <div class="proyecto">
-      <img src="proyecto1.jpg" alt="Proyecto 1">
-      <h3>Proyecto 1</h3>
-      <p>Descripción del proyecto 1.</p>
-    </div>
-
-    <div class="proyecto">
-      <img src="proyecto2.jpg" alt="Proyecto 2">
-      <h3>Proyecto 2</h3>
-      <p>Descripción del proyecto 2.</p>
-    </div>
-  </section>
-
+  
+  <nav>
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#proyectos">Proyectos Destacados</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  
   <section id="sobre-mi">
     <h2>Sobre mí</h2>
-    <img src="foto.jpg" alt="Mi foto">
-    <p>Una breve descripción sobre ti y tus habilidades, experiencia o intereses relacionados con tu trabajo.</p>
+    <div class="about-me-container">
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Mi Imagen" class="about-me-image" style="width: 300px; height: auto;">
+      <p>Soy Jesús Alberto, un apasionado diseñador gráfico especializado en fotografía, diseño web y el uso experto de programas como Illustrator y Photoshop. Me apasiona crear soluciones visuales impactantes que combinen creatividad y funcionalidad.</p>
+    </div>
   </section>
-
+  
+  
+  
+  <section id="experiencia">
+    <h2>Experiencia</h2>
+    <ul>
+      <li>CamaleonDMI - Diseñador Gráfico (2020 - Actualidad)</li>
+      <li>Otra Empresa - Diseñador Gráfico (2018 - 2020)</li>
+    </ul>
+  </section>
+  
+  <section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <ul>
+      <li>
+        <img src="https://images.unsplash.com/photo-1499343245400-cddc78a01317?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Proyecto 1" class="project-image" style="width: 200px; height: auto;">
+        <p>Descripción del Proyecto 1</p>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Proyecto 2" class="project-image" style="width: 200px; height: auto;">
+        <p>Descripción del Proyecto 2</p>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1506097425191-7ad538b29cef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Proyecto 3" class="project-image" style="width: 200px; height: auto;">
+        <p>Descripción del Proyecto 3</p>
+      </li>
+    </ul>
+  </section>
+  
+  
+  
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>Si estás interesado en colaborar o tienes alguna pregunta, no dudes en contactarme. Puedes usar el siguiente formulario o encontrarme en las redes sociales.</p>
-    <form>
-      <input type="text" placeholder="Nombre">
-      <input type="email" placeholder="Correo electrónico">
-      <textarea placeholder="Mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <p>Puedes contactarme a través de mi correo electrónico: ejemplo@correo.com</p>
   </section>
-
-  <footer>
-    <p>&copy; 2023 - Todos los derechos reservados</p>
-  </footer>
 </body>
 </html>
